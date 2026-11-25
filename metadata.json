@@ -1,0 +1,6 @@
+{
+  "name": "Primus Encrypted Blackjack",
+  "description": "An on-chain Blackjack dApp demonstrating Primus Labs zkFHE encrypted hole card architecture on Ethereum Sepolia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --color-primus-bg: #FAF8F5;
+  --color-primus-ink: #1A1A1A;
+  --color-primus-orange: #FF6B2C;
+  --color-primus-charcoal: #2D2D2D;
+  --color-primus-muted: #8A8580;
+  --color-primus-border: #E0DCD6;
+  --color-primus-felt: #1E3A2F;
+  --color-primus-card: #F5F2ED;
+  --color-primus-danger: #C44B3C;
+  --color-primus-success: #3D8C5C;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #FAF8F5;
+    color: #1A1A1A;
+    scroll-behavior: smooth;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
